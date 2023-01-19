@@ -249,7 +249,7 @@ html {
 /* -------------happy clients section starts from here-------------- */
 
 .happy-clients {
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
@@ -300,6 +300,9 @@ html {
 }
 
 /* --------asked section starts from here--------- */
+.accordion {
+    margin-bottom: 100px;
+}
 
 .accordion-button {
     font-family: var(--font-secondary);
@@ -312,6 +315,19 @@ html {
     font-weight: 400;
     font-size: 16px;
     color: #7E848C;
+}
+
+/* ------------footer section starts from here------------- */
+
+footer {
+    background: #0B0D17;
+    color: #FFFFFF;
+    padding: 2rem;
+}
+
+.get-the-app i {
+    font-size: 30px;
+    margin: 5px;
 }
 
 /* --------------media queries---------- */
@@ -343,5 +359,10 @@ html {
 }
 .happy-clients {
     grid-template-columns: repeat(1, 1fr);
+}
+.last {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 }
