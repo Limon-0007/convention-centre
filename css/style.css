@@ -246,6 +246,58 @@ html {
     border: 2px solid #3F87F5;
 }
 
+/* -------------happy clients section starts from here-------------- */
+
+.happy-clients {
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.clients-title {
+    font-family: var(--font-primary);
+    font-size: 38px;
+    font-weight: 700;
+    color: #0A0826;
+}
+
+
+.happy-clients-cards {
+    padding: 2rem;
+    background-color: #FFFFFF;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clients-text {
+    color: #6C6C6C;
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+.name {
+    margin-top: 10px;
+    color: #0C1920;
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.profession {
+    color: #747474;
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
 
 /* --------------media queries---------- */
 
@@ -256,6 +308,9 @@ html {
     } 
     .card-3 {
         bottom: 0rem;
+    }
+    .happy-clients {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -270,5 +325,8 @@ html {
 }  
 .card-3 {
     bottom: 0rem;
+}
+.happy-clients {
+    grid-template-columns: repeat(1, 1fr);
 }
 }
