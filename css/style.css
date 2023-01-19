@@ -46,9 +46,10 @@
 .carousel-item {
     background-image: url("../images/banner.png");
     background-repeat: no-repeat;
-    padding: 30px;
     background-size: cover;
     background-position: center;
+    padding: 30px;
+    margin-bottom: 100px;
 }
 
 .carousel-heading {
@@ -81,4 +82,55 @@
     border: 2px solid #3F87F5;
     color: #3F87F5;
     background: none;
+}
+
+/* ------------main section starts from here------------- */
+
+.precious {
+    margin-bottom: 100px;
+}
+
+.precious .texts {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.precious-title {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    color: #0A0826;
+    font-size: 38px;
+}
+
+.precious-texts {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+.precious .texts button {
+    border: 2px solid #3F87F5;
+    background-color: #3F87F5;
+    color: #FFFFFF;
+    padding: 10px 12px;
+    font-family: var(--font-primary);
+    font-weight: 700;
+    transition: 0.5s ease-in-out;
+}
+.precious .texts button:hover {
+    border: 2px solid #3F87F5;
+    background-color: #FFFFFF;
+    color: #3F87F5
+}
+
+/* --------------media queries---------- */
+
+@media screen and (max-width: 568px) {
+.row {
+    row-gap: 3rem;
+    flex-direction: column-reverse;
+}    
 }
