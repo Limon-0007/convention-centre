@@ -88,6 +88,28 @@
 
 .precious {
     margin-bottom: 100px;
+    position: relative;
+}
+
+.precious-canvas {
+    position: absolute;
+    right: 0;
+    top: 5.5rem;
+    background-color: #FFFFFF;
+    font-weight: 600;
+    padding: 10px 10px;
+}
+.precious-canvas::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    height: 25px;
+    width: 5px;
+    background-color: #3F87F5;
+}
+
+.precious-canvas i {
+    color: #3F87F5;
 }
 
 .precious .texts {

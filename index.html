@@ -12,11 +12,13 @@
     />
     <!-- ---------font awesome------------ -->
 
-    <script src="https://kit.fontawesome.com/f32a350683.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/f32a350683.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- custom css -->
 
     <link rel="stylesheet" href="css/style.css" />
-
   </head>
   <body>
     <header>
@@ -163,19 +165,65 @@
     <main>
       <!-- --------precious moments section--------- -->
       <section>
-      <div class="container precious">
-       <div class="row">
-        <div class="img col-lg-6 col-md-6 col-sm-12">
-          <img src="images/wedding.png" alt="image not found" class="img-fluid">
+        <div class="container precious">
+                <!-- off canvas -->
+        <a
+        class="btn precious-canvas"
+        data-bs-toggle="offcanvas"
+        href="#offcanvasExample"
+        role="button"
+        aria-controls="offcanvasExample"
+      >
+      <i class="fa-solid fa-gift"></i> 	&nbsp; 20% off on next booking 	&nbsp;	&nbsp;	&nbsp; <i class="fa-solid fa-xmark"></i>
+      </a>
+      
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+            Offcanvas
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
         </div>
-        <!-- -----texts--------- -->
-        <div class="texts col-lg-6 col-md-6 col-sm-12">
-          <h3 class="precious-title">Every moment is Precious </h3>
-          <p class="precious-texts">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-          <button>Explore our album <i class="fa-solid fa-arrow-right"></i></button>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements
+            you have chosen. Like, text, images, lists, etc.
+          </div>
         </div>
-       </div>
       </div>
+          <div class="row">
+      <!-- rows -->
+            <div class="img col-lg-6 col-md-6 col-sm-12">
+              <img
+                src="images/wedding.png"
+                alt="image not found"
+                class="img-fluid"
+              />
+            </div>
+            <!-- -----texts--------- -->
+            <div class="texts col-lg-6 col-md-6 col-sm-12">
+              <h3 class="precious-title">Every moment is Precious</h3>
+              <p class="precious-texts">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+              <button>
+                Explore our album <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
